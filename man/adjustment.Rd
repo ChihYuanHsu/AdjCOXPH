@@ -30,7 +30,7 @@ The default value is NULL that means \emph{m} is selected automatically.}
 
 \item{HR_adj}{Hazard ratio after adjustment.}
 
-\item{HR_adj_CI}{Confidence interval of the after adjustment.}
+\item{HR_adj_CI}{Confidence interval of the hazard ratio after adjustment.}
 
 \item{DP_adj}{Difference in proportions of the true responders.}
 

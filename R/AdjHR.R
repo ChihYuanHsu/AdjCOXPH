@@ -16,7 +16,7 @@
 #' @return \item{HR_cox}{Cox hazard ratio you inputed.}
 #' @return \item{HR_cox_CI}{Confidence interval of the Cox hazard ratio you inputed.}
 #' @return \item{HR_adj}{Hazard ratio after adjustment.}
-#' @return \item{HR_adj_CI}{Confidence interval of the after adjustment.}
+#' @return \item{HR_adj_CI}{Confidence interval of the hazard ratio after adjustment.}
 #' @return \item{DP_adj}{Difference in proportions of the true responders.}
 #' @return \item{DP_adj_CI}{Confidence interval of the difference in proportions of the true responders.}
 
