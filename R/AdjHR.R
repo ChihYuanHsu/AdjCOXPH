@@ -49,7 +49,8 @@ adjustment <- function(HR_cox, HR_cox_CI, s1mix.chosen, s0mix.chosen, pi1.est, p
     #K1 <- rule(1 - pi1.est); K0 <- rule(1 - pi0.est)
     K1 <- K0 <- max(rule(1 - pi1.est), rule(1 - pi0.est))
   } else {
-    K1 <- m[1]; K0 <- m[2]
+    #K1 <- m[1]; K0 <- m[2]
+    K1 <- K0 <- m
   }
 
   #### Taylor expansion
