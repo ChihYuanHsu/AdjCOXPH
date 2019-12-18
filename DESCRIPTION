@@ -6,7 +6,7 @@ Depends: R (>= 3.5.0)
 Imports: stats
 Author: Hsu, Chih-Yuan and Shyr, Yu
 Maintainer: Chih-Yuan Hsu <chih-yuan.hsu@vumc.org>
-Description: Estimation Of hazard ratio and difference in Proportions in proportional cure model through KM curves and Cox hazard ratio.
+Description: Estimation for hazard ratio and difference in proportions in proportional cure model through KM curves and Cox hazard ratio.
 License: GPL-2 | GPL-3
 Encoding: UTF-8
 LazyData: true
