@@ -5,7 +5,7 @@ Sept 16, 2022
 
 ## How to use CoxTEL
 
-![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/Demo_Fig.png)
+![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
 
 ### First step: manually extract probabilities from KM curves
 
