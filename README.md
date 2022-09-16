@@ -1,4 +1,4 @@
-Introduction to CoxTEL
+CoxTEL
 ================
 Chih-Yuan Hsu
 
