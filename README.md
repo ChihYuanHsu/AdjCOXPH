@@ -4,6 +4,10 @@ Chih-Yuan Hsu
 
 Sept 16, 2022
 
+References
+
+Hsu, C.Y., Lin, E.P.Y. and Shyr, Y. (2021). Development and Evaluation of a Method to Correct Misinterpretation of Clinical Trial Results With Long-term Survival. JAMA Oncol. doi:10.1001/jamaoncol.2021.0289.
+
 ## How to use CoxTEL
 
 ![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
@@ -49,5 +53,3 @@ adjustment(HR_cox, HR_cox_CI, s1mix.chosen, s0mix.chosen, pi1.est, pi0.est)
     ## [1] 0.41 0.22 0.12 0.08 0.06 0.04 0.03 0.03
 
 CoxTEL HR: 1.185 (0.992-1.417); CoxTEL DP: 0.080 (0.038-0.123)
-
-
