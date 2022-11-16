@@ -14,9 +14,6 @@ Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI
 
 ### First step: manually extract probabilities from KM curves
 
-``` r
-extract_prob # extracted probabilities
-```
 
     ##                6mo 12mo 18mo 24mo 30mo 36mo 42mo 48mo cured prop.
     ## Arm1 (blue, %)  34   23   19   14   13   12   11   11          11
