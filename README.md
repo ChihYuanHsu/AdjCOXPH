@@ -8,6 +8,8 @@ Hsu, C.Y., Lin, E.P.Y. and Shyr, Y. (2021). Development and Evaluation of a Meth
 
 ## How to use CoxTEL
 
+Please download CoxTEL_1.1.0.zip and locally install it. 
+
 ![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
 
 Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI
