@@ -51,3 +51,5 @@ adjustment(HR_cox, HR_cox_CI, s1mix.chosen, s0mix.chosen, pi1.est, pi0.est)
     ## [1] 0.41 0.22 0.12 0.08 0.06 0.04 0.03 0.03
 
 CoxTEL HR: 1.185 (0.992-1.417) for short-term survivors; CoxTEL DP: 0.080 (0.038-0.123) for long-term survivors.
+
+Proportion.LTS: the estimates for the proportions of long-term survivors.
