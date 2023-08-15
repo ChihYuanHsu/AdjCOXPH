@@ -2,13 +2,13 @@ CoxTEL
 ================
 Chih-Yuan Hsu
 
-Sept 16, 2022
+Aug 15, 2023
 
 Hsu, C.Y., Lin, E.P.Y. and Shyr, Y. (2021). Development and Evaluation of a Method to Correct Misinterpretation of Clinical Trial Results With Long-term Survival. JAMA Oncol. doi:10.1001/jamaoncol.2021.0289.
 
 ## How to use CoxTEL
-
-Please download CoxTEL_1.1.0.zip and locally install it. 
+Download CoxTEL_1.2.0.tar.gz and locally install it.
+Or execute the following code: library(devtools); install_github("cyhsuTN/CoxTEL") 
 
 ![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
 
