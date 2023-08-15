@@ -11,7 +11,7 @@ library(devtools)
 install_github("cyhsuTN/CoxTEL")
 ```
 
-## Usage
+## Usage of CoxTEL
 ![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
 
 Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI
