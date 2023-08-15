@@ -1,0 +1,13 @@
+Package: CoxTEL
+Type: Package
+Title: A Novel Adjustment Method for Cox Proportional Hazards Model in Data with Long-term Survival 
+Version: 1.2.0
+Depends: R (>= 3.5.0)
+Imports: stats, utils
+Author: Hsu, Chih-Yuan and Shyr, Yu
+Maintainer: Chih-Yuan Hsu <chih-yuan.hsu@vumc.org>
+Description: Cox-TEL HR and Cox-TEL DP. Two inputs are required: the reported Cox HRs and Kaplan-Meier-estimated survival probabilities.
+License: GPL-2 | GPL-3
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.1
