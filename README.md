@@ -4,8 +4,7 @@ Chih-Yuan Hsu
 
 Aug 15, 2023
 
-## How to use CoxTEL
-### Installation
+## Installation
 Download CoxTEL_1.2.0.tar.gz and locally install it, or execute the following code:
 ``` r
 library(devtools)
@@ -16,6 +15,7 @@ install_github("cyhsuTN/CoxTEL")
 
 Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI
 
+## Usage
 ### First step: manually extract probabilities from KM curves
 
     ##                6mo 12mo 18mo 24mo 30mo 36mo 42mo 48mo cured prop.
