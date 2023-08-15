@@ -5,9 +5,9 @@ Chih-Yuan Hsu
 Aug 15, 2023
 
 ## How to use CoxTEL
+### Installation
+Download CoxTEL_1.2.0.tar.gz and locally install it, or execute the following code:
 ``` r
-Download CoxTEL_1.2.0.tar.gz and locally install it. Or
-Execute the following code:
 library(devtools)
 install_github("cyhsuTN/CoxTEL")
 ```
