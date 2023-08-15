@@ -1,4 +1,4 @@
-CoxTEL
+CoxTEL: a method to correct misinterpretation of clinical trial results with long-term survival
 ================
 Chih-Yuan Hsu
 
