@@ -11,11 +11,11 @@ library(devtools)
 install_github("cyhsuTN/CoxTEL")
 ```
 
+## Usage
 ![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
 
 Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI
 
-## Usage
 ### First step: manually extract probabilities from KM curves
 
     ##                6mo 12mo 18mo 24mo 30mo 36mo 42mo 48mo cured prop.
