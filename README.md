@@ -4,12 +4,6 @@ Chih-Yuan Hsu
 
 Aug 15, 2023
 
-C.Y. Hsu, E.P.Y. Lin, Y. Shyr. (2021). Development and Evaluation of a Method to Correct Misinterpretation of Clinical Trial Results With Long-term Survival. JAMA Oncol. doi:10.1001/jamaoncol.2021.0289.
-
-E.P.Y. Lin, C.Y. Hsu, J.F. Chiou et al. (2022). Cox Proportional Hazard Ratios Overestimate Survival Benefit of Immune Checkpoint Inhibitors (ICI): Cox-TEL Adjustment and Meta-analyses of PD-L1 Expression and ICI Survival Benefit. J Thorac Oncol. 17, 1365-1374. doi:10.1016/j.jtho.2022.08.010.
-
-E.P.Y. Lin, C.Y. Hsu, L. Berry, P. Bunn, Y. Shyr (2022). Analysis of Cancer Survival associated with Immune Checkpoint Inhibitors after Statistical Adjustment: A Systematic Review and Meta-analyses. JAMA Network Open. 5(8):e2227211. doi:10.1001/jamanetworkopen.2022.27211.
-
 ## How to use CoxTEL
 ``` r
 Download CoxTEL_1.2.0.tar.gz and locally install it. Or
@@ -61,3 +55,11 @@ adjustment(HR_cox, HR_cox_CI, s1mix.chosen, s0mix.chosen, pi1.est, pi0.est)
 CoxTEL HR: 1.185 (0.992-1.417) for short-term survivors; CoxTEL DP: 0.080 (0.038-0.123) for long-term survivors.
 
 Proportion.LTS: the estimates for the proportions of long-term survivors in both arms.
+
+### References
+C.Y. Hsu, E.P.Y. Lin, Y. Shyr. (2021). Development and Evaluation of a Method to Correct Misinterpretation of Clinical Trial Results With Long-term Survival. JAMA Oncol. doi:10.1001/jamaoncol.2021.0289.
+
+E.P.Y. Lin, C.Y. Hsu, J.F. Chiou et al. (2022). Cox Proportional Hazard Ratios Overestimate Survival Benefit of Immune Checkpoint Inhibitors (ICI): Cox-TEL Adjustment and Meta-analyses of PD-L1 Expression and ICI Survival Benefit. J Thorac Oncol. 17, 1365-1374. doi:10.1016/j.jtho.2022.08.010.
+
+E.P.Y. Lin, C.Y. Hsu, L. Berry, P. Bunn, Y. Shyr (2022). Analysis of Cancer Survival associated with Immune Checkpoint Inhibitors after Statistical Adjustment: A Systematic Review and Meta-analyses. JAMA Network Open. 5(8):e2227211. doi:10.1001/jamanetworkopen.2022.27211.
+
