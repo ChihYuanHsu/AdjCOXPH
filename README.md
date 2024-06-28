@@ -38,8 +38,6 @@ library(IPDfromKM)
 
 ``` r
 imgexp <- imager::load.image("../Demo_Fig.png") #png/jpg (bitmap images)
-plot.new()
-rasterImage(imgexp, 0, 0, 1, 1)
 ```
 
 Please decide the limits of x-axis and y-axis when executing the R
