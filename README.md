@@ -2,7 +2,8 @@ CoxTEL: a method to correct misinterpretation of clinical trial results with lon
 ================
 Chih-Yuan Hsu
 
-Aug 15, 2023
+June 28, 2024
+
 
 ## Installation
 Download CoxTEL_1.2.0.tar.gz and locally install it, or execute the following code:
@@ -11,23 +12,58 @@ library(devtools)
 install_github("cyhsuTN/CoxTEL")
 ```
 
-## Usage of CoxTEL
-![Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
+## Usage
+``` r
+library(CoxTEL)
+```
 
-Figure 1: (Demo, simulated data) Reported KM curves and HR with 95% CI
+## Example
 
-### First step: manually extract probabilities from the reported KM curves
+A demo survival figure for CoxTEL. The KM curves and HR with 95% CI are
+estimated from simulated data.
 
-    ##                6mo 12mo 18mo 24mo 30mo 36mo 42mo 48mo cured prop.
-    ## Arm1 (blue, %)  34   23   19   14   13   12   11   11          11
-    ## Arm0 (red, %)   41   22   12    8    6    4    3    3           3
+![Figure 1: KM curves and HR with 95% CI](https://github.com/cyhsuTN/CoxTEL/blob/master/Demo_Fig.png)
+
+Figure 1: Reported KM curves and HR with 95% CI
+
+### First step: manually extract probabilities from KM curves
+
+Users can use the following R code to extract the probabilities from
+Kaplan-Meier curves by mouse-clicks.
+
+``` r
+library(imager)
+library(IPDfromKM)
+```
+
+``` r
+imgexp <- imager::load.image("../Demo_Fig.png") #png/jpg (bitmap images)
+plot.new()
+rasterImage(imgexp, 0, 0, 1, 1)
+```
+
+Please decide the limits of x-axis and y-axis when executing the R
+command line below. For example, x = c(0,48) and y = c(0, 1) for the
+demo figure.
+``` r
+df <- IPDfromKM::getpoints(imgexp, 0, 48, 0, 1)
+```
+
+Will pop out messages on the R console. Please follow the instruction to
+extract survival probabilities at specific time points, for example, at
+the 6th, 12th, …, 48th months. Once users complete the mouse-clicks,
+please click “Esc” on the keyboard.
+
+df saves all survival probabilities at the 6th, 12th, …, 48th months.
+Besides, users also need to extract the cure proportions from plateaus
+at the tails of survival curves. In this case, the cure proportions are
+the survival probabilities at the 48th months.
 
 ### Second step: input the extracted probabilities and the reported Cox HR as well as CI
 
 ``` r
-library(CoxTEL)
-s1mix.chosen <- c(34, 23, 19, 14, 13, 12, 11, 11)/100 # extracted prob. in treatment arm
-s0mix.chosen <- c(41, 22, 12,  8,  6,  4,  3,  3)/100 # extracted prob. in control arm
+s1mix.chosen <- c(.34, .23, .19, .14, .13, .12, .11, .11) # extracted prob. in treatment arm
+s0mix.chosen <- c(.41, .22, .12, .08, .06, .04, .03, .03) # extracted prob. in control arm
 pi1.est <- 1 - 0.11 # uncured proportion in treatment arm
 pi0.est <- 1 - 0.03 # uncured proportion in control arm
 HR_cox <- 0.92 # reported Cox HR
@@ -52,7 +88,8 @@ adjustment(HR_cox, HR_cox_CI, s1mix.chosen, s0mix.chosen, pi1.est, pi0.est)
     ## $s0mix.chosen
     ## [1] 0.41 0.22 0.12 0.08 0.06 0.04 0.03 0.03
 
-CoxTEL HR: 1.185 (0.992-1.417) for short-term survivors; CoxTEL DP: 0.080 (0.038-0.123) for long-term survivors.
+CoxTEL HR: 1.185 (0.992 to 1.417) for short-term survivors; CoxTEL DP:
+0.080 (0.038 to 0.123) for long-term survivors.
 
 Proportion.LTS: the estimates for the proportions of long-term survivors in both arms.
 
